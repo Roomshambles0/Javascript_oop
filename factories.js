@@ -5,7 +5,7 @@
 
 // solution is use factory and constructor function
 
-//factory function 
+// factory function 
 // if any function returns an object in javascript it is called as factory function
 
 function drawcircle(radius,x,y){
@@ -21,6 +21,7 @@ function drawcircle(radius,x,y){
         }
     }
 }
+
 
 // Constructor Function
 // if any function uses this operator then it is called as constructor function
