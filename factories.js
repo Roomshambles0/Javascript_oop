@@ -6,6 +6,8 @@
 // solution is use factory and constructor function
 
 //factory function 
+// if any function returns an object in javascript it is called as factory function
+
 function drawcircle(radius,x,y){
     return {
         radius,
@@ -21,6 +23,8 @@ function drawcircle(radius,x,y){
 }
 
 // Constructor Function
+// if any function uses this operator then it is called as constructor function
+// if you are using constructor function then the make first alphabate of the function name capital
 function Circle(radius){
  console.log("this",this)
 
@@ -43,8 +47,21 @@ const another = new Circle(1);
 // About the returned value, there are three situations below. 
 
 // Return Value
-// : "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes"
 // If the constructor function returns a non-primitive value (Object, array, etc), the constructor function still returns that value. Which means the new operator won’t change the returned value.
 // If the constructor function returns nothing, ‘this’ is returned;
 // If the constructor function returns a primitive value,  it will be ignored, and ‘this’ is returned.
 
+// constructor functions
+// In javascript there are inbuilt constructor functions
+//  if we 
+
+let x = {}
+
+// javascript will interprit above as 
+// let x = new Object()
+// {} this symbol is called literal 
+
+
+// every primitive datatype have constructor function and literals 
+// for eg. string literal is '' "" and 'String()` constructor function
+// when you call any constructor function use new key word before it
