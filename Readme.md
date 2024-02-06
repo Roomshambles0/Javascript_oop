@@ -11,10 +11,15 @@
 - **call and this**
 - **inheritance**
 - **static**
+
+
+## Core 
 - **This and arrow function**
 - **closure and lexical scoping**
 - **call stack**
 - **execution context and hoisting**
+- **Window or global object**
+- **Event loop** 
 
 
 ### chai aur code, programing with mosh oops, some blogs
