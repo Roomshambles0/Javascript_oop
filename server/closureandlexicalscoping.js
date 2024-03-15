@@ -1,7 +1,7 @@
 //https://youtu.be/VaH09NXQZ58?feature=shared
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
 
-//closure: In other words, a closure gives you access to an outer function's scope from an inner function. 
+//closure: a closure gives you access to an outer function's scope from an inner function. 
 //In JavaScript, closures are created every time a function is created, at function creation time.
 // you need to call the function inside the outer function body for eg.
 
