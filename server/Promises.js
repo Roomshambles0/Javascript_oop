@@ -56,3 +56,60 @@ promise3.then((user)=>{
 }).finally(()=>{
     console.log("finally")
 })
+
+//How to handle promise with async await
+
+const promise4 = new Promise(function(resolve,reject){
+    setTimeout(()=>{
+        console.log("async task is completed4")
+        const user = {"username":"Piyush"}
+        const error = false
+        if(!error){
+        resolve(user)
+        }else{
+            reject("error")
+        }
+    },1000) 
+})
+
+async function Consumepromise4(){
+    try {
+   
+    const res = await promise4
+   console.log(res)
+
+    } catch(error) {
+     
+    console.log(error)
+
+    }
+}
+
+Consumepromise4()
+
+//fetch example
+
+
+async function getAllUsers(){
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+
+        const data = await response.json()
+        console.log(data);
+    } catch (error) {
+        console.log("E: ", error);
+    }
+}
+
+getAllUsers()
+
+
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((response) => {
+    return response.json()
+})
+.then((data) => {
+    console.log(data);
+})
+.catch((error) => console.log(error))
